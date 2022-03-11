@@ -34,8 +34,9 @@ namespace Part_3___Chapter_Problem
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             string name = txtName.Text;
-            int age = Convert.ToInt32(nudAge);
-            lblOutput.Text = ($"Hi, {name}");
+            int age = Convert.ToInt32(nudAge.Text);
+            double height = Convert.ToDouble(txtHeight.Text);
+            lblOutput.Text = ($"Hi, {name} You are {age} and are {height} centimetres tall");
 
         }
 
